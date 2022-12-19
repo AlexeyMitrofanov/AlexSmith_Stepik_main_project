@@ -1,2 +1,2 @@
 # AlexSmith_Stepik_main_project
-Test project
+My first Python automation test project
