@@ -1,3 +1,4 @@
+import allure
 import pytest as pytest
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service as ChromeService
@@ -10,6 +11,7 @@ from pages.main_page import Main_page
 from pages.payment_page import Payment_page
 
 
+@allure.description("Test buy product 1")
 @pytest.mark.run(order=2)
 def test_buy_product_1(set_up, set_group):
     driver = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()))
