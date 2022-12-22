@@ -12,7 +12,7 @@ def test_about_link():
     print("Start test")
 
     login = Login_page(driver)
-    login.autorization()
+    login.authorization()
 
     mp = Main_page(driver)
     mp.select_menu_about()

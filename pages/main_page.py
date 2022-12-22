@@ -3,6 +3,7 @@ from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
 from base.base_class import Base
+from utilities.logger import Logger
 
 
 class Main_page(Base):  # Создали класс Main_page
@@ -69,22 +70,30 @@ class Main_page(Base):  # Создали класс Main_page
     # Methods - методы, которые будем выполнять
 
     def select_products_1(self):
+        Logger.add_start_step(method="select_products_1")
         self.get_current_url()
         self.click_select_product_1()
         self.click_cart()
+        Logger.add_end_step(url=self.driver.current_url, method="select_products_1")
 
     def select_products_2(self):
+        Logger.add_start_step(method="select_products_2")
         self.get_current_url()
         self.click_select_product_2()
         self.click_cart()
+        Logger.add_end_step(url=self.driver.current_url, method="select_products_2")
 
     def select_products_3(self):
+        Logger.add_start_step(method="select_products_3")
         self.get_current_url()
         self.click_select_product_3()
         self.click_cart()
+        Logger.add_end_step(url=self.driver.current_url, method="select_products_3")
 
     def select_menu_about(self):
+        Logger.add_start_step(method="select_menu_about")
         self.get_current_url()
         self.click_burger_menu()
         self.click_about_button()
         self.assert_url("https://saucelabs.com/")
+        Logger.add_end_step(url=self.driver.current_url, method="select_menu_about")

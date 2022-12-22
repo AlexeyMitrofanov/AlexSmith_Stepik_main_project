@@ -17,7 +17,7 @@ def test_buy_product_1(set_up, set_group):
     print("Start test 1")
 
     login = Login_page(driver)  # Создали переменную с экземпляром класса
-    login.autorization()
+    login.authorization()
 
     mp = Main_page(driver)  # Создали переменную с экземпляром класса
     mp.select_products_1()
@@ -35,39 +35,3 @@ def test_buy_product_1(set_up, set_group):
     fp.finish()
 
     print("Finish test 1")
-
-
-@pytest.mark.run(order=3)
-def test_buy_product_2(set_up, set_group):
-    driver = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()))
-
-    print("Start test 2")
-
-    login = Login_page(driver)
-    login.autorization()
-
-    mp = Main_page(driver)
-    mp.select_products_2()
-
-    cp = Cart_page(driver)
-    cp.product_confirmation()
-
-    print("Finish test 2")
-
-
-@pytest.mark.run(order=1)
-def test_buy_product_3(set_up, set_group):
-    driver = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()))
-
-    print("Start test 3")
-
-    login = Login_page(driver)
-    login.autorization()
-
-    mp = Main_page(driver)
-    mp.select_products_3()
-
-    cp = Cart_page(driver)
-    cp.product_confirmation()
-
-    print("Finish test 3")

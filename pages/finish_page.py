@@ -1,4 +1,5 @@
 from base.base_class import Base
+from utilities.logger import Logger
 
 
 class Finish_page(Base):  # Создали класс Finish_page
@@ -16,6 +17,8 @@ class Finish_page(Base):  # Создали класс Finish_page
     # Methods - методы, которые будем выполнять
 
     def finish(self):
+        Logger.add_start_step(method="finish")
         self.get_current_url()
         self.assert_url("https://www.saucedemo.com/checkout-complete.html")
         self.screenshot()
+        Logger.add_end_step(url=self.driver.current_url, method="finish")
