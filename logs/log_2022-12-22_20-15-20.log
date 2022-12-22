@@ -1,0 +1,88 @@
+
+-----
+Test: tests/test_buy_product.py::test_buy_product_1 (call)
+Start time: 2022-12-22 20:15:22.528534
+Start name method: authorization
+
+End time: 2022-12-22 20:15:23.264856
+End name method: authorization
+URL: https://www.saucedemo.com/inventory.html
+
+-----
+
+-----
+Test: tests/test_buy_product.py::test_buy_product_1 (call)
+Start time: 2022-12-22 20:15:23.265856
+Start name method: select_products_1
+
+End time: 2022-12-22 20:15:23.374881
+End name method: select_products_1
+URL: https://www.saucedemo.com/cart.html
+
+-----
+
+-----
+Test: tests/test_buy_product.py::test_buy_product_1 (call)
+Start time: 2022-12-22 20:15:23.374881
+Start name method: product_confirmation
+
+End time: 2022-12-22 20:15:23.421891
+End name method: product_confirmation
+URL: https://www.saucedemo.com/checkout-step-one.html
+
+-----
+
+-----
+Test: tests/test_buy_product.py::test_buy_product_1 (call)
+Start time: 2022-12-22 20:15:23.421891
+Start name method: input_information
+
+End time: 2022-12-22 20:15:23.619936
+End name method: input_information
+URL: https://www.saucedemo.com/checkout-step-two.html
+
+-----
+
+-----
+Test: tests/test_buy_product.py::test_buy_product_1 (call)
+Start time: 2022-12-22 20:15:23.620937
+Start name method: payment
+
+End time: 2022-12-22 20:15:23.667947
+End name method: payment
+URL: https://www.saucedemo.com/checkout-complete.html
+
+-----
+
+-----
+Test: tests/test_buy_product.py::test_buy_product_1 (call)
+Start time: 2022-12-22 20:15:23.668946
+Start name method: finish
+
+End time: 2022-12-22 20:15:23.841537
+End name method: finish
+URL: https://www.saucedemo.com/checkout-complete.html
+
+-----
+
+-----
+Test: tests/test_about_link.py::test_about_link (call)
+Start time: 2022-12-22 20:15:27.565263
+Start name method: authorization
+
+End time: 2022-12-22 20:15:28.254289
+End name method: authorization
+URL: https://www.saucedemo.com/inventory.html
+
+-----
+
+-----
+Test: tests/test_about_link.py::test_about_link (call)
+Start time: 2022-12-22 20:15:28.254289
+Start name method: select_menu_about
+
+End time: 2022-12-22 20:15:31.870595
+End name method: select_menu_about
+URL: https://saucelabs.com/
+
+-----
